@@ -1,0 +1,22 @@
+<div ng-controller="TwitterCtrl">
+    <h3 class="hidden-xs">Tweets</h3>
+    <div id="tweetWrapper" ng-iscroll="tweetWrapper" ng-iscroll-delay="50" class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+        <div id="scroller">
+            <div id="pullDown"><span class="pullDownIcon"></span> <span class="pullDownLabel">Pull down to refresh...</span></div>
+            <ul class="list-group">
+                <li id="{{tweet.id}}" ng-repeat="tweet in tweets" class="list-group-item" ng-repeat-is-finished="tweetsLoaded()">
+                    <div style="padding:0" class="col-xs-3 col-sm-2 col-md-2 col-lg-2"><img ng-src="{{tweet.avatar}}" alt=" "></div>
+                    <div class="col-xs-9 col-sm-10 col-md-10 col-lg-10">
+                        <strong>{{tweet.screenname!="Oops!"&&"@"||""}}{{tweet.screenname}}</strong> <small ng-show="tweet.screenname!='Oops!'">: {{tweet.tweetedOnParsed | date:"medium"}}</small><br>
+                        <em><span ng-bind-html-unsafe="tweet.status"></span></em>
+                    </div>
+                    <div class="clearfix"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
+        <button class="refreshButton btn btn-lg btn-link" ng-click="refresh()"><span id="refreshButtonIcon" class="glyphicon glyphicon-refresh"></span></button>
+    </div>
+</div>
+

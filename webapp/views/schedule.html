@@ -1,0 +1,37 @@
+
+<div ng-controller="ScheduleCtrl">
+    <h3 class="hidden-xs">Conference Program</h3>
+	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-4">
+	    <ul class="nav nav-pills xs-date-tabs">
+	        <li ng-repeat="(key,dt) in conferenceDates" ng-class="dt==dateSelected+'T100000Z'&&'active'||''" class="col-sm-12 col-md-12 col-lg-12">
+	            <a data-toggle="tab" href="#" ng-click="changeDate(dt, $event)">
+	            	<span class="hidden-xs">{{dt | date:'EEEE'}}</span>
+	            	<span class="hidden-sm hidden-md hidden-lg">{{dt | date:'EEE'}}</span>
+	            </a>
+	        </li>
+	        <li ng-show="hasFavorites()" class="col-sm-12 col-md-12 col-lg-12" ng-class="dateSelected=='fav'&&'active'||''">
+	            <a data-toggle="tab" href="" ng-click="changeDate('fav', $event)">
+	            	<span class="hidden-xs">My Favorites</span>
+	            	<span class="hidden-sm hidden-md hidden-lg">Favs</span>
+	            </a>
+	        </li>
+	    </ul>
+	</div>
+	<div class="col-xs-12 col-sm-8 col-lg-7 col-lg-offset-1 col-sm-offset-1" ng-class="isLoading()&&' fadedout '||''">
+		<loading ng-show="isLoading()"></loading>
+		<div class="styled-select">
+			<label>
+				<select name="trackFilter" id="trackFilter" ng-model="trackFilter">
+					<option value="">All Tracks</option>
+					<option ng-repeat="track in tracks" value="{{track}}">{{track}}</option>
+				</select>
+			</label>
+		</div>
+		<ul class="list-group" id="session{{filterBy}}">
+			<li class="list-group-item" ng-repeat="session in sessions | orderBy:'dateObject' | filter:{ 'track' : trackFilter }" ng-repeat-is-finished="sessionsLoaded()">
+                <sessionModalOpener href="#modal{{session.id}}" ng-class="session.isOver&&'session-over'||''" id="{{session.id}}"></sessionModalOpener>
+                <sessionmodal id="modal{{session.id}}"></sessionmodal>
+	      	</li>
+	    </ul>
+	</div>
+</div>
