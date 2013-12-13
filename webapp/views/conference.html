@@ -14,7 +14,7 @@
                 <h3 class="hidden-xs">Evaluate the Conference!</h3>
                 <ul class="list-group" id="evalConfTablet">
                     <li class="list-group-item">
-                        <form class="form-horizontal" action="https://iu.edu/~iumobile/kmebeta3/conference/evaluation-form/save-overall.php" target="evalFormSubmitsHere" method="post" name="evalFormOverall01" id="evalFormOverall01">
+                        <form class="form-horizontal" action="https://ifdtc.azurewebsites.net/IFDTCEval1.php" target="evalFormSubmitsHere" method="post" name="evalFormOverall01" id="evalFormOverall01">
                             <input type="hidden" name="overallEval" value="Yep!">
                              <div class="form-group">
                                 <label for="opinion">What is your opinion of the sessions? i.e. 45-minute blocks, new session styles, etc?</label>
@@ -36,7 +36,7 @@
                                 <label for="more">Is there is anything else you want us to make a note of for next year?</label>
                                 <textarea class="form-control" name="more" id="more"></textarea>
                             </div>
-                            <button id="buttonEval01" type="button" ng-click="tookOverallEval()" onclick="evaluationFormSubmission(this.form.id,'loadingEval01','completeEval01','buttonEval01')" class="btn btn-success">Send This Evaluation</button>
+                            <button id="buttonEval01" type="submit" ng-click="tookOverallEval()" onclick="evaluationFormSubmission(this.form.id,'loadingEval01','completeEval01','buttonEval01')" class="btn btn-success">Send This Evaluation</button>
                             <span id="loadingEval01" style="margin-left:20px;display:none;"><img src="img/ajax-loader.gif" alt=" "></span>
                             <div class="visible-xs"><br></div>
                             <span id="completeEval01" style="margin-left:20px;display:none;"><span class="alert alert-success" style="padding:8px;">Thank you for your evaluation.</span></span>
@@ -126,7 +126,7 @@
                     <div class="panel-body">
                         <ul class="list-group" id="evalConfPhone">
                             <li class="list-group-item">
-                                <form class="form-horizontal" action="https://iu.edu/~iumobile/kmebeta3/conference/evaluation-form/save-overall.php" target="evalFormSubmitsHere" method="post" name="evalFormOverall02" id="evalFormOverall02">
+                                <form class="form-horizontal" action="https://ifdtc.azurewebsites.net/IFDTCEval1.php" target="evalFormSubmitsHere" method="post" name="evalFormOverall02" id="evalFormOverall02">
                                     <input type="hidden" name="overallEval" value="Yep!">
                                      <div class="form-group">
                                         <label for="opinion">What is your opinion of the sessions? i.e. 45-minute blocks, new session styles, etc?</label>
@@ -148,7 +148,7 @@
                                         <label for="more">Is there is anything else you want us to make a note of for next year?</label>
                                         <textarea class="form-control" name="more" id="more"></textarea>
                                     </div>
-                                    <button id="buttonEval02" type="button" ng-click="tookOverallEval()" onclick="evaluationFormSubmission(this.form.id,'loadingEval02','completeEval02','buttonEval02')" class="btn btn-success">Send This Evaluation</button>
+                                    <button id="buttonEval02" type="submit" ng-click="tookOverallEval()" onclick="evaluationFormSubmission(this.form.id,'loadingEval02','completeEval02','buttonEval02')" class="btn btn-success">Send This Evaluation</button>
                                     <span id="loadingEval02" style="margin-left:20px;display:none;"><img src="img/ajax-loader.gif" alt=" "></span>
                                     <div class="visible-xs"><br></div>
                                     <span id="completeEval02" style="margin-left:20px;display:none;"><span class="alert alert-success" style="padding:8px;">Thank you for your evaluation.</span></span>
