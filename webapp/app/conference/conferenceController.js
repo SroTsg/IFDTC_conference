@@ -24,7 +24,7 @@ function ConferenceCtrl($scope, $rootScope, $timeout, $route, $location, $templa
     }
     
     $scope.readyForEval = function(){
-        var strDateToShow = '2013-11-20';
+        var strDateToShow = '2014-05-22';
         var intDateToShow = Date.parse( strDateToShow );
         var intToday      = Date.parse( todayFormatted );
 
