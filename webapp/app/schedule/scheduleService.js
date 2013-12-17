@@ -15,7 +15,7 @@ function ScheduleService($http, $q, $scope, $rootScope){
 
 	this.getInfo = function(str_date){
 		var info = {
-			jsonURL 	: 'json/passthrough?feedurl='+escape('https://iu.edu/~iumobile/kme3beta/conference/json/processed/schedule/'+str_date+'.json'),
+		    jsonURL: 'http://ifdtc.azurewebsites.net/data/schedule/' + str_date + '.json',
 			description	: 'Schedule of all the sesssion. Have fun!'
 		}
 		return info;
