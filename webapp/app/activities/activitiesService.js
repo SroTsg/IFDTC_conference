@@ -6,7 +6,7 @@ function ActivitiesService($http, $q){
 
 	this.getInfo = function(){
 		var info = {
-			jsonURL 	: '/json/passthrough?feedurl='+escape('https://iu.edu/~iumobile/kme3beta/conference/json/activities/feed.json'),
+		    jsonURL: 'http://ifdtc.azurewebsites.net/data/activities/feed.json',
 			description	: 'Whatcha wanna do?'
 		}
 
