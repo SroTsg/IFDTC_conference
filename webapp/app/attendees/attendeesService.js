@@ -6,7 +6,7 @@ function AttendeesService($http, $q){
 
 	this.getInfo = function(letter){
 		var info = {
-			jsonURL 	: 'json/passthrough?feedurl='+escape('https://iu.edu/~iumobile/kme3beta/conference/json/processed/attendees/'+(letter && letter.toLowerCase() || 'a')+'.json'),
+		    jsonURL 	: 'http://ifdtc.azurewebsites.net/data/attendees/'+(letter && letter.toLowerCase() || 'a')+'.json',
 			description	: 'Who be at th is thing?'
 		}
 
