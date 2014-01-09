@@ -48,7 +48,7 @@ var conference = angular.module('conference', ['ui.bootstrap','ng-iscroll'], fun
         restrict:'E',
         transclude:true,
         replace:true,
-        templateUrl: 'app/_directive-templates/loading.html'
+        templateUrl: 'app/directive-templates/loading.html'
     }
 })
 
@@ -57,7 +57,7 @@ var conference = angular.module('conference', ['ui.bootstrap','ng-iscroll'], fun
         restrict:'E',
         transclude:true,
         replace:true,
-        templateUrl: 'app/_directive-templates/session-modal.html'
+        templateUrl: 'app/directive-templates/session-modal.html'
     }
 })
 
@@ -66,7 +66,7 @@ var conference = angular.module('conference', ['ui.bootstrap','ng-iscroll'], fun
         restrict:'E',
         transclude:true,
         replace:true,
-        templateUrl: 'app/_directive-templates/session-modal-opener.html'
+        templateUrl: 'app/directive-templates/session-modal-opener.html'
     }
 })
 
