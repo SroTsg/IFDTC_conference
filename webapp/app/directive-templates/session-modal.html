@@ -1,8 +1,8 @@
 <div class="modal fade in" tabindex="-1" role="dialog">
     <div class="xs-modal-buttons hidden-lg hidden-md hidden-sm">
         <button type="button" class="btn btn-primary btn-xs pull-right" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove-circle"></span> Close</button>
-        <button class="btn btn-primary btn-xs pull-right" ng-show="!isFavorite(session.id) && hasLocalStorage" ng-click="addToFavorites(session.id,session)" data-dismiss="modal"><span class="glyphicon glyphicon-plus"></span> Favorites</button>
-        <button class="btn btn-primary btn-xs pull-right" ng-show="isFavorite(session.id) && hasLocalStorage" ng-click="removeFromFavorites(session.id)" data-dismiss="modal"><span class="glyphicon glyphicon-minus"></span> Favorites</button>
+        <button class="btn btn-primary btn-xs pull-right" ng-show="!isFavorite(session.id) && hasLocalStorage" ng-click="addToFavorites(session.id,session)" data-dismiss="modal"><span class="glyphicon glyphicon-plus"></span> My Schedule</button>
+        <button class="btn btn-primary btn-xs pull-right" ng-show="isFavorite(session.id) && hasLocalStorage" ng-click="removeFromFavorites(session.id)" data-dismiss="modal"><span class="glyphicon glyphicon-minus"></span> My Schedule</button>
     </div>
     <div class="modal-dialog">
         <div class="modal-content">
@@ -134,8 +134,8 @@
                 <div class="clearfix"></div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-primary" ng-show="!isFavorite(session.id) && hasLocalStorage" ng-click="addToFavorites(session.id,session)" data-dismiss="modal"><span class="glyphicon glyphicon-plus"></span> Favorites</button>
-                <button class="btn btn-primary" ng-show="isFavorite(session.id) && hasLocalStorage" ng-click="removeFromFavorites(session.id)" data-dismiss="modal"><span class="glyphicon glyphicon-minus"></span> Favorites</button>
+                <button class="btn btn-primary" ng-show="!isFavorite(session.id) && hasLocalStorage" ng-click="addToFavorites(session.id,session)" data-dismiss="modal"><span class="glyphicon glyphicon-plus"></span> My Schedule</button>
+                <button class="btn btn-primary" ng-show="isFavorite(session.id) && hasLocalStorage" ng-click="removeFromFavorites(session.id)" data-dismiss="modal"><span class="glyphicon glyphicon-minus"></span> My Schedule</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
