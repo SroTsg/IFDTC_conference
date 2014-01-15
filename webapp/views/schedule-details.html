@@ -3,7 +3,7 @@
     <sessionmodal id="details{{session.id}}"></sessionmodal>
     <nav class="navbar navbar-inverse navbar-fixed-bottom session-detail-nav" role="navigation">
         <button onclick="window.history.back();" type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-circle-arrow-left"></span> Back</button>
-        <button class="btn btn-primary pull-right" ng-show="!isFavorite(session.id)" ng-click="addToFavorites(session.id);" data-dismiss="modal"><span class="glyphicon glyphicon-plus"></span> My Favorites</button>
-        <button class="btn btn-primary pull-right" ng-show="isFavorite(session.id)" ng-click="removeFromFavorites(session.id);" data-dismiss="modal"><span class="glyphicon glyphicon-minus"></span> My Favorites</button>
+        <button class="btn btn-primary pull-right" ng-show="!isFavorite(session.id)" ng-click="addToFavorites(session.id);" data-dismiss="modal"><span class="glyphicon glyphicon-plus"></span> My Sessions</button>
+        <button class="btn btn-primary pull-right" ng-show="isFavorite(session.id)" ng-click="removeFromFavorites(session.id);" data-dismiss="modal"><span class="glyphicon glyphicon-minus"></span> My Sessions</button>
     </nav>
 </div>
