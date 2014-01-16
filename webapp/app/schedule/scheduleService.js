@@ -6,10 +6,10 @@ function ScheduleService($http, $q, $scope, $rootScope){
 
 	this.getConferenceDates = function(){
 		return {
-				0:	"2013-11-18T100000Z",
-				1:	"2013-11-19T100000Z",
-				2: 	"2013-11-20T100000Z",
-				3:	"2013-11-21T100000Z"
+				0:	"2014-05-18T100000Z",
+				1:	"2014-05-19T100000Z",
+				2: 	"2014-05-20T100000Z",
+				3:	"2014-05-21T100000Z"
 		}
 	}
 
