@@ -52,7 +52,7 @@ vendor/font-awesome/font/FontAwesome.otf?#iefix&v=3.2.1
 # - Images
 img/no-tweets.gif
 img/ajax-loader.gif
-img/kd-logo.png
+img/logo.gif
 img/glyphicons-halflings-white.png
 img/glyphicons-halflings.png
 img/maps/sheraton-property.jpg
@@ -138,18 +138,18 @@ views/conference.html
 views/schedule.html
 views/schedule-details.html
 views/twitter.html
-app/_directive-templates/loading.html
-app/_directive-templates/session-modal-opener.html
-app/_directive-templates/session-modal.html
+app/directive-templates/loading.html
+app/directive-templates/session-modal-opener.html
+app/directive-templates/session-modal.html
 
 # - GOOGLE
-https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=1380+Harbor+Island+Drive,+San+Diego,+CA&amp;aq=0&amp;oq=1380+Harbor+Island+Drive,+San+Diego,+CA&amp;sll=32.727039,-117.1979&amp;sspn=0.00899,0.008765&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=1380+Harbor+Island+Dr,+San+Diego,+California+92101&amp;z=14&amp;iwloc=A&amp;ll=32.734585,-117.197342&amp;output=embed
+# - https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=1380+Harbor+Island+Drive,+San+Diego,+CA&amp;aq=0&amp;oq=1380+Harbor+Island+Drive,+San+Diego,+CA&amp;sll=32.727039,-117.1979&amp;sspn=0.00899,0.008765&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=1380+Harbor+Island+Dr,+San+Diego,+California+92101&amp;z=14&amp;iwloc=A&amp;ll=32.734585,-117.197342&amp;output=embed
 
 # ----------------------------------------------------
 # Resources that require the user to be online.
 # ----------------------------------------------------
 NETWORK:
 http://pbs.twimg.com/
-json/passthrough?feedurl=https%3A//iu.edu/%7Eiumobile/kme3beta/conference/json/activities/feed.json
-json/twitter-search
+# - json/passthrough?feedurl=https%3A//iu.edu/%7Eiumobile/kme3beta/conference/json/activities/feed.json
+# - json/twitter-search
 *
