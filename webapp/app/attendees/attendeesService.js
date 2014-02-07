@@ -6,7 +6,7 @@ function AttendeesService($http, $q){
 
 	this.getInfo = function(letter){
 		var info = {
-		    jsonURL 	: 'http://ifdtc.azurewebsites.net/data/attendees/'+(letter && letter.toLowerCase() || 'a')+'.json',
+		    jsonURL 	: 'http://odk-dev.isr.umich.edu/attendees/'+(letter && letter.toLowerCase() || 'all'),
 			description	: 'Who be at th is thing?'
 		}
 

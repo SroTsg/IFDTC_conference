@@ -67,7 +67,7 @@ function AttendeesCtrl($scope,$rootScope,$route,$http,$window,attendeesService){
         $scope.attendees                = [];
         
         if(filter.length>1){
-            $rootScope.attendeeLetterChosen = 'All';
+            $rootScope.attendeeLetterChosen = '';
             $scope.orgFilter                = filter;
         }else{
             $rootScope.attendeeLetterChosen = filter;

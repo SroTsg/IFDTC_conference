@@ -8,10 +8,10 @@ function TwitterService($http, $q){
 	    var today      = new Date();
 	    var sinceDate  = today.getFullYear()+"-01-01";
 		var info = {
-			jsonURL 		 : 'json/twitter-search?since='+sinceDate+'&term=',
+			jsonURL 		 : 'http://odk-dev.isr.umich.edu/twitter/',
 			description		 : 'Kuali Days Tweets!',
-			tweetSearchTerm  : "@Kuali",
-			tweetSearchTerm2 : "#KualiDays"
+			tweetSearchTerm  : "@jeffgerstmann",
+			tweetSearchTerm2 : "#yolo"
 		}
 
 		return info;
