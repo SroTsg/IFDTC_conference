@@ -3,10 +3,9 @@
 /* Services */
 
 function ActivitiesService($http, $q){
-
 	this.getInfo = function(){
 		var info = {
-		    jsonURL: 'http://ifdtc.azurewebsites.net/data/activities/feed.json',
+		    jsonURL: 'http://odk-dev.isr.umich.edu/activities',
 			description	: 'Whatcha wanna do?'
 		}
 

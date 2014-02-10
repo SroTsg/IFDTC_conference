@@ -1,20 +1,57 @@
 <div ng-controller="ActivitiesCtrl">
     <h3 class="hidden-xs">Activities, Let's Have Some Fun!</h3>
 
-    <p class="alert">The activities listed below are being offered as a public service by members of the community.  These events are informal and are not sanctioned by Kuali Days 2013, the Kuali Foundation, or CONCENTRA. Enjoy!</p>
+    <p class="alert">The activities listed below are being offered as a public service by members of the community.  These events are informal and are not sanctioned by IFD&TC, or it's affiliates. Enjoy!</p>
+
+	<hr>
+    <div class="panel-group eval-session col-xs-12 col-sm-12 col-lg-12" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"><a class="accordion-toggle collapsed eval-link" data-toggle="collapse" data-parent="#accordion" href="#collapseProperty">Submit an activity<span class="glyphicon glyphicon-chevron-down pull-right" style="color:white;margin-right:5px;"></span></a></h4>
+                </div>
+                <div id="collapseProperty" class="panel-collapse collapse">
+                    <div class="panel-body" style="padding:5px!important;">
+                        <form class="form-horizontal" action="http://odk-dev.isr.umich.edu/activitysubmit" target="evalFormSubmitsHere" method="post" name="evalFormOverall01" id="evalFormOverall01">
+                            <div class="form-group">
+                                <label for="opinion">What day will the activity take place?</label>
+                                <input type="date" name="date" id="date"></input>
+                            </div>
+                             <div class="form-group">
+                                <label for="location">What time will the activity take place?</label>
+                                <input type="time" name="time" id="time"></input>
+                            </div>
+                             <div class="form-group">
+                                <label for="general">What is the title of the activity?</label>
+                                <textarea class="form-control" name="title" id="title"></textarea>
+                            </div>
+                             <div class="form-group">
+                                <label for="experience">Please provide a brief summary:</label>
+                                <textarea class="form-control" name="task" id="task"></textarea>
+                            </div>
+                            <button id="buttonEval01" type="submit" onclick="evaluationFormSubmission(this.form.id,'loadingEval01','completeEval01','buttonEval01')" class="btn btn-success">Submit the event</button>
+                            <span id="loadingEval01" style="margin-left:20px;display:none;"><img src="img/ajax-loader.gif" alt=" "></span>
+                            <div class="visible-xs"><br></div>
+                            <button id="completeEval01" type="submit" onclick="window.location.reload(false)" class="btn btn-success"  style="margin-left:20px;display:none;"><span style="padding:8px;">Submitted. Click me to Refresh.</span></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <hr>
 
     <div class="col-xs-12 col-sm-12 col-lg-12" ng-class="isLoading()&&' fadedout '||''">
         <loading ng-show="isLoading()"></loading>
-        <ul class="list-group" id="activitiesList">
-            <li class="list-group-item" ng-repeat="activity in activities | orderBy:'+udate'" ng-repeat-is-finished="activitiesLoaded()">
-                <div style="padding:0;" class="col-xs-4 col-sm-5 col-md-5 col-lg-4" ng-show="activity.title!='Oops!'">
-                    <span class="glyphicon icon-calendar"></span><small> {{activity.dateString}}</small>
+        <div class="panel-group" id="accordion2">
+            <div class="panel panel-default" ng-repeat="activity in activities | orderBy:'+udate'" ng-repeat-is-finished="activitiesLoaded()">
+                <a class="accordion-toggle collapsed activity-heading" data-toggle="collapse" data-parent="#accordion2" href=#{{activity.id}} style="padding:5px;display:block; height=100%; text-decoration:none;">
+                    <small class="pull-right"> {{activity.dateString}}</small><span class="glyphicon icon-calendar pull-right"></span>
                     <br>
-                    <span class="glyphicon glyphicon-time"></span><small> {{activity.timeString}}</small>
-                </div>
-                <div style="padding:0;" class="col-xs-8 col-sm-7 col-md-7 col-lg-8">
-                    <h5 class="list-group-item-heading">{{activity.title}}</h5>
-                    <p class="list-group-item-text"><span ng-bind-html-unsafe="activity.task"></span></p>
+                    <span>{{activity.title}}</span>
+                    <small class="pull-right"> {{activity.timeString}}</small><span class="glyphicon glyphicon-time pull-right"></span>
+                    
+                </a>
+                <div id={{activity.id}} class="panel-collapse collapse activity-detail">
+                    <p class="list-group-item-text" style="padding:10px;"><span ng-bind-html-unsafe="activity.task"></span></p>
                 </div>
                 <div class="clearfix"></div>
             </li>
@@ -22,4 +59,5 @@
     </div>
 
 </div>
+
 

@@ -50,11 +50,8 @@ function ActivitiesCtrl($scope,$rootScope,$route,$http,$window,activitiesService
     */
 
 
-
-
     // INIT
     $scope.grabTheData();
 }
-
 
 
