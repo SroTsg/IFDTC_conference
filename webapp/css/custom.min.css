@@ -9,7 +9,7 @@
 	padding:6px 15px 6px 30px;
 	margin-top:3px;
 	margin-bottom:6px;
-	background: url('../img/search.png') no-repeat 8px 6px; 
+	background: url('../img/search.png') no-repeat 8px 50%; 
 	width:100%;
 }
 .rounded { 
