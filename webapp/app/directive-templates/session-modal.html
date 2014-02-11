@@ -123,11 +123,11 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-lg-12 schedule-details">{{session.details.split('\\').join('')}}</div>
-                <div class="col-xs-12 col-sm-12 col-lg-12 schedule-details" ng-show="session.presenters.length>0">
+                <div class="col-xs-12 col-sm-12 col-lg-12 schedule-details" ng-show="session.Presenter.length>0">
                     <h6>Presenters</h6>
                     <ul class="presenters list-unstyled">
-                        <li ng-repeat="presenter in session.presenters">
-                            <span class="glyphicon glyphicon-user"></span> {{presenter.name}}</span>, <em>{{presenter.title}}</em>
+                        <li ng-repeat="Presenter in session.Presenter">
+                            <span class="glyphicon glyphicon-user"></span> {{Presenter.name}}</span>, <em>{{Presenter.title}}</em>
                         </li>
                     </ul>
                 </div>
