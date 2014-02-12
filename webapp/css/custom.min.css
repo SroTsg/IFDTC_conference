@@ -20,3 +20,15 @@
 .main-logo {
     height:70px;
 }
+.activitysearch {
+    margin-top:15px;
+}
+@media (min-width: 768px){
+.col-sm-4 {
+width: 32%!important;
+}}
+
+@media (min-width: 1200px){
+.col-lg-2 {
+width: 16.2%!important;
+}}
