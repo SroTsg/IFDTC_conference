@@ -10,8 +10,8 @@ function TwitterService($http, $q){
 		var info = {
 			jsonURL 		 : 'http://odk-dev.isr.umich.edu/twitter/',
 			description		 : 'IFDTC Tweets!',
-			tweetSearchTerm  : "ifdtc",
-			tweetSearchTerm2 : ""
+			tweetSearchTerm  : "%23ifdtc",
+			tweetSearchTerm2 : "@ifdtc2014"
 		}
 
 		return info;
