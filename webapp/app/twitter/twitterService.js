@@ -8,7 +8,7 @@ function TwitterService($http, $q){
 	    var today      = new Date();
 	    var sinceDate  = today.getFullYear()+"-01-01";
 		var info = {
-			jsonURL 		 : 'http://odk-dev.isr.umich.edu/twitter/',
+			jsonURL 		 : 'http://sro-django.isr.umich.edu/djangoapp/twitter/',
 			description		 : 'IFDTC Tweets!',
 			tweetSearchTerm  : "%23ifdtc",
 			tweetSearchTerm2 : "@ifdtc2014"

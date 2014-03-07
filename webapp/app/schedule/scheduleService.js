@@ -15,7 +15,7 @@ function ScheduleService($http, $q, $scope, $rootScope){
 
 	this.getInfo = function(str_date){
 		var info = {
-		    jsonURL: 'http://odk-dev.isr.umich.edu/agenda/' + str_date,
+		    jsonURL: 'http://sro-django.isr.umich.edu/djangoapp/agenda/' + str_date,
 			description	: 'Schedule of all the sesssion. Have fun!'
 		}
 		return info;

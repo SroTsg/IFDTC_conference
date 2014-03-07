@@ -14,15 +14,14 @@ CACHE MANIFEST
 CACHE: 
 
 # - Catch-all
-http://m.kuali.org/kme-beta/
-http://m.kuali.org/kme-beta/index.html
-http://m.kuali.org/kme-beta/index.html#
-http://m.kuali.org/kme-beta/index.html#/
-http://m.kuali.org/kme-beta/index.html#/schedule
-http://m.kuali.org/kme-beta/index.html#/attendees
-http://m.kuali.org/kme-beta/index.html#/map
-http://m.kuali.org/kme-beta/index.html#/twitter
-http://m.kuali.org/kme-beta/index.html#/activities
+http://ifdtc.isr.umich.edu/
+http://ifdtc.isr.umich.edu/#
+http://ifdtc.isr.umich.edu/#/
+http://ifdtc.isr.umich.edu/#/schedule
+http://ifdtc.isr.umich.edu/#/attendees
+http://ifdtc.isr.umich.edu/#/map
+http://ifdtc.isr.umich.edu/#/twitter
+http://ifdtc.isr.umich.edu/#/activities
 
 # - Fonts
 fonts/glyphicons-halflings-regular.eot
@@ -58,7 +57,7 @@ img/glyphicons-halflings.png
 img/maps/sheraton-property.jpg
 img/maps/sheraton-marina-lower.jpg
 img/maps/sheraton-marina-lobby.jpg
-https://www.kuali.org/favicon.ico
+favicon.png
 
 # - CSS
 vendor/bootstrap/dist/css/bootstrap.min.css
@@ -95,36 +94,36 @@ js/ie8.responsive-fix.js
 
 
 # - JSON (loaded from passthrough JAVA calls)
-http://odk-dev.isr.umich.edu/agenda/2013-11-18
-http://odk-dev.isr.umich.edu/agenda/2013-11-19
-http://odk-dev.isr.umich.edu/agenda/2013-11-20
-http://odk-dev.isr.umich.edu/agenda/2013-11-21
-http://odk-dev.isr.umich.edu/attendees/a
-http://odk-dev.isr.umich.edu/attendees/b
-http://odk-dev.isr.umich.edu/attendees/c
-http://odk-dev.isr.umich.edu/attendees/d
-http://odk-dev.isr.umich.edu/attendees/e
-http://odk-dev.isr.umich.edu/attendees/f
-http://odk-dev.isr.umich.edu/attendees/g
-http://odk-dev.isr.umich.edu/attendees/h
-http://odk-dev.isr.umich.edu/attendees/i
-http://odk-dev.isr.umich.edu/attendees/j
-http://odk-dev.isr.umich.edu/attendees/k
-http://odk-dev.isr.umich.edu/attendees/l
-http://odk-dev.isr.umich.edu/attendees/m
-http://odk-dev.isr.umich.edu/attendees/n
-http://odk-dev.isr.umich.edu/attendees/o
-http://odk-dev.isr.umich.edu/attendees/p
-http://odk-dev.isr.umich.edu/attendees/q
-http://odk-dev.isr.umich.edu/attendees/r
-http://odk-dev.isr.umich.edu/attendees/s
-http://odk-dev.isr.umich.edu/attendees/t
-http://odk-dev.isr.umich.edu/attendees/u
-http://odk-dev.isr.umich.edu/attendees/v
-http://odk-dev.isr.umich.edu/attendees/w
-http://odk-dev.isr.umich.edu/attendees/x
-http://odk-dev.isr.umich.edu/attendees/y
-http://odk-dev.isr.umich.edu/attendees/z
+http://sro-django.isr.umich.edu/djangoapp/agenda/2013-11-18
+http://sro-django.isr.umich.edu/djangoapp/agenda/2013-11-19
+http://sro-django.isr.umich.edu/djangoapp/agenda/2013-11-20
+http://sro-django.isr.umich.edu/djangoapp/agenda/2013-11-21
+http://sro-django.isr.umich.edu/djangoapp/attendees/a
+http://sro-django.isr.umich.edu/djangoapp/attendees/b
+http://sro-django.isr.umich.edu/djangoapp/attendees/c
+http://sro-django.isr.umich.edu/djangoapp/attendees/d
+http://sro-django.isr.umich.edu/djangoapp/attendees/e
+http://sro-django.isr.umich.edu/djangoapp/attendees/f
+http://sro-django.isr.umich.edu/djangoapp/attendees/g
+http://sro-django.isr.umich.edu/djangoapp/attendees/h
+http://sro-django.isr.umich.edu/djangoapp/attendees/i
+http://sro-django.isr.umich.edu/djangoapp/attendees/j
+http://sro-django.isr.umich.edu/djangoapp/attendees/k
+http://sro-django.isr.umich.edu/djangoapp/attendees/l
+http://sro-django.isr.umich.edu/djangoapp/attendees/m
+http://sro-django.isr.umich.edu/djangoapp/attendees/n
+http://sro-django.isr.umich.edu/djangoapp/attendees/o
+http://sro-django.isr.umich.edu/djangoapp/attendees/p
+http://sro-django.isr.umich.edu/djangoapp/attendees/q
+http://sro-django.isr.umich.edu/djangoapp/attendees/r
+http://sro-django.isr.umich.edu/djangoapp/attendees/s
+http://sro-django.isr.umich.edu/djangoapp/attendees/t
+http://sro-django.isr.umich.edu/djangoapp/attendees/u
+http://sro-django.isr.umich.edu/djangoapp/attendees/v
+http://sro-django.isr.umich.edu/djangoapp/attendees/w
+http://sro-django.isr.umich.edu/djangoapp/attendees/x
+http://sro-django.isr.umich.edu/djangoapp/attendees/y
+http://sro-django.isr.umich.edu/djangoapp/attendees/z
 
 
 # - HTML

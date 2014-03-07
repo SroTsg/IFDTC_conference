@@ -5,7 +5,7 @@
 function ActivitiesService($http, $q){
 	this.getInfo = function(){
 		var info = {
-		    jsonURL: 'http://odk-dev.isr.umich.edu/activities',
+		    jsonURL: 'http://sro-django.isr.umich.edu/djangoapp/activities',
 			description	: 'Whatcha wanna do?'
 		}
 
