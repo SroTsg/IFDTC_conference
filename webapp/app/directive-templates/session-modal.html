@@ -127,15 +127,15 @@
                     <h6>Facilitator</h6>
                     <ul class="presenters list-unstyled">
                         <li ng-repeat="Facilitator in session.Facilitator">
-                            <span class="glyphicon glyphicon-user"></span> {{Facilitator.firstname}} {{Facilitator.lastname}}</span>, <em>{{Facilitator.title}}</em>
-                            <li ng-hide="session.Facilitator.length">No facilitator</li>
+                            <span class="glyphicon glyphicon-user"></span> {{sessionFacilitator.firstname}} {{session.Facilitator.lastname}}</span><span ng-show="session.Facilitator.organization">, <em>{{session.Facilitator.organization}}</em></span>
+                            <span ng-hide="session.Facilitator.length">No facilitator</span>
                         </li>
                     </ul>
                     <h6>Presenters</h6>
                     <ul class="presenters list-unstyled">
                         <li ng-repeat="Presenter in session.Presenter">
-                            <span class="glyphicon glyphicon-user"></span> {{Presenter.firstname}} {{Presenter.lastname}}</span>, <em>{{Presenter.title}}</em>
-                            <li ng-hide="session.Presenter.length">No presenters</li>
+                            <span class="glyphicon glyphicon-user"></span> {{Presenter.firstname}} {{Presenter.lastname}}</span><span ng-show="Presenter.organization">, <em>{{Presenter.organization}}</em></span>
+                            <span ng-hide="session.Presenter.length">No presenters</span>
                         </li>
                     </ul>
                 </div>
