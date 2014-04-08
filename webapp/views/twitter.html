@@ -1,3 +1,11 @@
+<style>
+body {
+background-image:url('img/twtback.png');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center; 
+}
+</style>
 <div ng-controller="TwitterCtrl">
     <h3 class="hidden-xs">Tweets</h3>
     <div id="tweetWrapper" ng-iscroll="tweetWrapper" ng-iscroll-delay="50" class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
@@ -7,7 +15,7 @@
                 <li id="{{tweet.id}}" ng-repeat="tweet in tweets" class="list-group-item" ng-repeat-is-finished="tweetsLoaded()">
                     <div style="padding:0" class="col-xs-3 col-sm-2 col-md-2 col-lg-2"><img ng-src="{{tweet.avatar}}" alt=" "></div>
                     <div class="col-xs-9 col-sm-10 col-md-10 col-lg-10">
-                        <strong>{{tweet.screenname!="Oops!"&&"@"||""}}{{tweet.screenname}}</strong> <small ng-show="tweet.screenname!='Oops!'">: {{tweet.tweetedOnParsed | date:"medium"}}</small><br>
+                        <strong><a href="http://twitter.com/{{tweet.screenname}}">{{tweet.screenname!="Oops!"&&"@"||""}}{{tweet.screenname}}</a></strong> <small ng-show="tweet.screenname!='Oops!'">: {{tweet.tweetedOnParsed | date:"medium"}}</small><br>
                         <em><span ng-bind-html-unsafe="tweet.status"></span></em>
                     </div>
                     <div class="clearfix"></div>
