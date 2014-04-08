@@ -14,26 +14,26 @@
                 <h3 class="hidden-xs">Evaluate the Conference!</h3>
                 <ul class="list-group" id="evalConfTablet">
                     <li class="list-group-item">
-                        <form class="form-horizontal" action="https://ifdtc.azurewebsites.net/IFDTCEval1.php" target="evalFormSubmitsHere" method="post" name="evalFormOverall01" id="evalFormOverall01">
+                        <form class="form-horizontal" action="https://ifdtc.isr.umich.edu/djangoapp/feedback" target="evalFormSubmitsHere" method="post" name="evalFormOverall01" id="evalFormOverall01">
                             <input type="hidden" name="overallEval" value="Yep!">
                              <div class="form-group">
-                                <label for="opinion">What is your opinion of the sessions? i.e. 45-minute blocks, new session styles, etc?</label>
+                                <label for="opinion">What did you like most about this year's conference (e.g. topics covered, networking, session format, etc.)?</label>
                                 <textarea class="form-control" name="opinion" id="opinion"></textarea>
                             </div>
                              <div class="form-group">
-                                <label for="location">What did you think of the location? Both city of Austin and hotel?</label>
+                                <label for="location">What did you like least about this year's conference?</label>
                                 <textarea class="form-control" name="location" id="location"></textarea>
                             </div>
                              <div class="form-group">
-                                <label for="general">Thoughts on the General Session? How was the timing (not so early)? Content? Presenters?</label>
+                                <label for="general">Please tell us your thoughts about the conference's logistics (e.g. registration, food, room temperature, location etc.).</label>
                                 <textarea class="form-control" name="general" id="general"></textarea>
                             </div>
                              <div class="form-group">
-                                <label for="experience">Tell us about your experience with the Collaboration Showcase. Did it work for you? Did you spend time visiting with the sponsors?</label>
+                                <label for="experience">What topics would you like to see at next year's conference?</label>
                                 <textarea class="form-control" name="experience" id="experience"></textarea>
                             </div>
                              <div class="form-group">
-                                <label for="more">Is there is anything else you want us to make a note of for next year?</label>
+                                <label for="more">Is there is anything else you want us to know?</label>
                                 <textarea class="form-control" name="more" id="more"></textarea>
                             </div>
                             <button id="buttonEval01" type="submit" ng-click="tookOverallEval()" onclick="evaluationFormSubmission(this.form.id,'loadingEval01','completeEval01','buttonEval01')" class="btn btn-success">Send This Evaluation</button>
@@ -126,26 +126,26 @@
                     <div class="panel-body">
                         <ul class="list-group" id="evalConfPhone">
                             <li class="list-group-item">
-                                <form class="form-horizontal" action="https://ifdtc.azurewebsites.net/IFDTCEval1.php" target="evalFormSubmitsHere" method="post" name="evalFormOverall02" id="evalFormOverall02">
+                                <form class="form-horizontal" action="https://ifdtc.isr.umich.edu/djangoapp/feedback" target="evalFormSubmitsHere" method="post" name="evalFormOverall02" id="evalFormOverall02">
                                     <input type="hidden" name="overallEval" value="Yep!">
                                      <div class="form-group">
-                                        <label for="opinion">What is your opinion of the sessions? i.e. 45-minute blocks, new session styles, etc?</label>
+                                        <label for="opinion">What did you like most about this year's conference (e.g. topics covered, networking, session format, etc.)?</label>
                                         <textarea class="form-control" name="opinion" id="opinion"></textarea>
                                     </div>
                                      <div class="form-group">
-                                        <label for="location">What did you think of the location? Both city of Austin and hotel?</label>
+                                        <label for="location">What did you like least about this year's conference?</label>
                                         <textarea class="form-control" name="location" id="location"></textarea>
                                     </div>
                                      <div class="form-group">
-                                        <label for="general">Thoughts on the General Session? How was the timing (not so early)? Content? Presenters?</label>
+                                        <label for="general">Please tell us your thoughts about the conference's logistics (e.g. registration, food, room temperature, location etc.).</label>
                                         <textarea class="form-control" name="general" id="general"></textarea>
                                     </div>
                                      <div class="form-group">
-                                        <label for="experience">Tell us about your experience with the Collaboration Showcase. Did it work for you? Did you spend time visiting with the sponsors?</label>
+                                        <label for="experience">What topics would you like to see at next year's conference?</label>
                                         <textarea class="form-control" name="experience" id="experience"></textarea>
                                     </div>
                                      <div class="form-group">
-                                        <label for="more">Is there is anything else you want us to make a note of for next year?</label>
+                                        <label for="more">Is there is anything else you want us to know?</label>
                                         <textarea class="form-control" name="more" id="more"></textarea>
                                     </div>
                                     <button id="buttonEval02" type="submit" ng-click="tookOverallEval()" onclick="evaluationFormSubmission(this.form.id,'loadingEval02','completeEval02','buttonEval02')" class="btn btn-success">Send This Evaluation</button>
