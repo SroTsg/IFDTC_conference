@@ -2,6 +2,24 @@
 
 /* Services */
 
+function timesplit(timelist)
+{
+    var splittime = timelist.split(":");
+		splittime.pop();
+		var ampm = " AM";
+		if (splittime[0] == 12)
+		    {
+		        ampm = " PM";
+		    }
+		if (splittime[0] > 12)
+		{
+		    ampm = " PM";
+		    splittime[0] = splittime[0]-12;
+
+		}
+		return splittime.join(":")+ampm;
+}
+
 function ScheduleService($http, $q, $scope, $rootScope){
 
 	this.getConferenceDates = function(){
@@ -52,6 +70,8 @@ function ScheduleService($http, $q, $scope, $rootScope){
 				// IE making us reformat date
 				var forIEDateArray = sessions[s].date.split('-');
 				sessions[s].date   = forIEDateArray[2]+"-"+monthNameToNumber[forIEDateArray[1]]+"-"+(parseInt(forIEDateArray[0])+1);
+				sessions[s].starttime = timesplit(sessions[s].starttime);
+				sessions[s].endtime = timesplit(sessions[s].endtime);
 				var startDateTime  = Date.parse(sessions[s].date+' '+sessions[s].starttime);
 
 				// on iPad 1, IE 'fix' doesn't work.

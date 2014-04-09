@@ -10,8 +10,9 @@
     <div class="clearfix"></div>
 
     <loading ng-show="isLoading()"></loading>
-    <div class="alert alert-danger" ng-show="attendees.length<=0 && !isLoading()">Sorry, but there are not any attendees with last names starting with {{attendeeLetterChosen}}.</div>
-    <div class="alpha-row" ng-repeat="attendee in attendees | orderBy:'lastname' | filter:searchAttendee" ng-repeat-is-finished="attendeesLoaded()">
+    <div class="alpha-row" ng-repeat="attendee in filteredAttendee = (attendees | orderBy:'lastname' | filter:searchAttendee)" ng-repeat-is-finished="attendeesLoaded()">
+    <div class="alert alert-danger" ng-hide="filteredAttendee.length">Sorry, but there are not any attendees with last names starting with {{attendeeLetterChosen}}.</div>
+
         <div class="col-xs-12 col-sm-4 col-lg-2 attendee-card">
             <div class="col-xs-12 col-sm-12 col-lg-12"><strong>{{attendee.lastname}}, {{attendee.firstname}}</strong></div>
             <div ng-show="(attendee.jobtitle!='Other' && attendee.jobtitle!='other')" class="col-xs-12 col-sm-12 col-lg-12" title="{{attendee.jobtitle}}"><em>{{attendee.jobtitle}}</em></div>
