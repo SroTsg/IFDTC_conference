@@ -6,6 +6,8 @@ function ConferenceCtrl($scope, $rootScope, $timeout, $route, $location, $templa
     var today           = new Date();
     var todayFormatted  = today.getFullYear()+"-"+((today.getMonth()+1)<10&&"0"+(today.getMonth()+1)||(today.getMonth()+1))+"-"+(today.getDate()<10&&"0"+today.getDate()||today.getDate());
     var conferenceDates = scheduleService.getConferenceDates();
+    
+    scheduleService.getSchedule("");
 
     $rootScope.hasLocalStorage      = !store.disabled;
     $rootScope.conferenceDay        = "";

@@ -85,7 +85,11 @@ function ScheduleService($http, $q, $scope, $rootScope){
 				//console.log((startDateTime/1000000000) + " ["+sessions[s].date+' '+sessions[s].starttime+"] <= [2013-11-19 10:00 AM']" + (Date.parse('2013-11-19 10:00 AM')/1000000000));
 				sessions[s].isOver	   = startDateTime<=(new Date()).getTime()+oneDayInMiliseconds;
 			}
-
+        
+            if ( localStorage && "" == str_date )
+            {
+                localStorage.setItem("cached_sessions",JSON.stringify(sessions));
+            }
 			defer.resolve(sessions);
 		}).error(function(data, status, headers, config) {
 			defer.reject(status);
