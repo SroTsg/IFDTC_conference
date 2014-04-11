@@ -86,10 +86,6 @@ function ScheduleService($http, $q, $scope, $rootScope){
 				sessions[s].isOver	   = startDateTime<=(new Date()).getTime()+oneDayInMiliseconds;
 			}
         
-            if ( localStorage && "" == str_date )
-            {
-                localStorage.setItem("cached_sessions",JSON.stringify(sessions));
-            }
 			defer.resolve(sessions);
 		}).error(function(data, status, headers, config) {
 			defer.reject(status);
